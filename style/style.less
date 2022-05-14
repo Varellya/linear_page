@@ -1,0 +1,63 @@
+// compress: true
+
+@import "vars.less";
+@import "mixins.less";
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+    color: @white;
+
+    background-color: @background-main;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 4.4rem;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+/*------- Blocks -------*/
+
+@import "blocks/btn.less";
+
+@import "blocks/header.less";
+@import "blocks/intro.less";
+@import "blocks/logos.less";
+@import "blocks/feature.less";
+@import "blocks/interface.less";
+@import "blocks/command.less";
+@import "blocks/cycles.less";
+@import "blocks/roadmap.less";
+@import "blocks/integrated.less";
+@import "blocks/testimonials.less";
+@import "blocks/slite.less";
+@import "blocks/footer.less";
+

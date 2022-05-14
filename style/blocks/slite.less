@@ -1,0 +1,146 @@
+// main: ../style.less
+
+.slite {
+    display: flex;
+    flex-direction: column;
+}
+
+.tag_linear {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    margin: 14rem auto 8rem;
+    padding: 0.5rem 2rem;
+    
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-style: italic;
+
+    background-color: #0b0b0c;
+    border: 2px solid rgba(@white, .2);
+    border-radius: 50px;
+
+    &:before {
+        content: "";
+        display: block;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        width: 100%;
+        height: 100%;
+
+        filter: blur(15px);
+    }
+
+    &:nth-child(1):before {
+        background: @gradient-shadow;
+    }
+}
+
+.tag_img {
+    margin-right: 1.2rem;
+}
+
+.slite_inner {
+    margin: 0 auto 5rem;
+}
+
+.slite_block {
+    display: flex;
+
+    width: 900px;
+    padding: 2.5rem 4.5rem 6.5rem 2.5rem;
+
+    background-color: #0b0c0d;
+    border-radius: 20px;
+}
+
+.slite-block_cover {
+    width: 44rem;
+    height: 44rem;
+    margin-right: 7rem;
+    padding: 3.5rem 2.5rem;
+
+    background: linear-gradient(77.62deg, #695476 5.61%, #9576AB 20.86%, #BE7096 29.04%, #EB8B6B 45.92%, #E7786B 57.18%, #DC5A5A 81.33%, #AB4B68 94.11%);
+    border-radius: 16px;
+}
+
+.slite-cover_title {
+    margin-bottom: 6rem;
+
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 1.4;
+
+    span {
+        font-size: 1.3rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+}
+
+.slite-cover_text {
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.slite-block_inner {
+    width: 32rem;
+    margin-top: 2rem;
+}
+
+.slite-inner_title {
+    &:after {
+        content: "";
+        display: block;
+
+        width: 100%;
+        height: 2px;
+        margin: 3rem 0;
+
+        background-color: #27272a;
+    }
+}
+
+.slite-inner_name {
+    margin-bottom: 1rem;
+
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.slite-inner_position {
+    font-size: 1.8rem;
+}
+
+.slite-inner_text {
+    margin-bottom: 2.5rem;
+
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.2;
+
+    a {
+        color: @primary;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.slite-inner_date {
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: .15px;
+    color: @text;
+}
+
